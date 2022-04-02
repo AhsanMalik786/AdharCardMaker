@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="css/index.css">
+  <script src="js/index.js" async="true"></script>
+  <title>Adhar</title>
+</head>
+<body>
+  <!-- Main Screen -->	
+	<div class="Splash-Screen">
+	  <div class="logo">
+	    <img src="assets/img/Arman.jpg"/>
+	  </div>
+	  <div class="footer">
+	    <div class="wrapper">
+	      <p>Follow On </p> <a href="https://www.instagram.com/itz_yesh__/" target="_blank"><img src="assets/img/instagram.svg" alt="" /></a>
+	      <a href="https://www.facebook.com/profile.php?id=100076981573312" target="_blank"><img src="assets/img/facebook.svg" alt="" /></a>
+	    </div>
+	  </div>
+	</div>
+	<!-- Elements Are here -->
+	<div id="root">
+	  <header>
+	    <p>AADHAR MAKER</p>
+	  </header>
+	  <section>
+	    <div class="btn" onclick="create()">
+	      <img src="assets/img/plus.svg" /><p>create</p>
+	    </div>
+	    <hr />
+	    <div class="preview">
+	      <p>AADHAR CARD PREVIEW</p>
+	    </div>
+	    <div class="adh-preview">
+	      <div class="front">
+	        <div class="f-a-h">
+	          <li>
+	            <img src="assets/img/257058.svg"/>
+	          </li>
+	          <li>
+	            <img src="assets/img/front_h.jpg" alt="" />
+	          </li>
+	        </div>
+	        <div class="f_main">
+	          <div id="person-img">
+	            <img src="assets/img/frog.jpg" id="person_img"/>
+	          </div>
+	          <div class="person-details">
+	            <p id="name-en">Frog Ansari</p>
+	            <p id="name-hi">मेढक अंसारी </p>
+	            <p>जन्मतिथि/DOB : <span id="dob">01/01/2004</span></p>
+	            <p id="gender">पुरुष/Male</p>
+	          </div>
+	          <div class="qr-code">
+	            <img src="assets/img/qrcode.png"/>
+	         </div>
+	        </div>
+	        
+          <div class="f_adh_num">
+            <span id="n-1">1234</span>
+            <span id="n-2">5678</span>
+            <span id="n-3">2222</span>
+          </div>
+	      </div>
+	      <div class="back">
+	        <div class="b-a-h">
+	          <li><img src=assets/img/x.svg alt="" /></li>
+	          <li><img src="assets/img/back_h.jpg" alt="" /></li>
+	        </div>
+	        <div id="back-main">
+	          <div class="add-hindi">
+	            <p style="text-align:center;margin-bottom:5px">पता:</p>
+	            <p>आत्मज : <span id="father-name-hi">
+	              मेढक
+	            </span> ,</p>
+	            <p id="address-hi">बरहरा, कुसीनागर उत्तर प्रदेश 274304</p>
+	          </div>
+	          <div class="add-english">
+	            <p style="text-align:center;">Address :</p><br />
+	            <p>S/O : <span id="father-name-en">
+	              Frog
+	            </span></p>
+	            <p id="address-en">Barhara Ganj, Kushingara, Uttar Pardes - 274304</p>
+	          </div>
+	        </div>
+	        <div class="adhar-number-back-face">
+	          <span id="n-1">1234</span>
+            <span id="n-2">5678</span>
+            <span id="n-3">2222</span>
+	        </div>
+	      </div>
+	    </div>
+	  </section>
+	</div>
+	<!-- form --->
+	<div id="form-parent">
+	  <div class="form">
+	    <input type="number" id="adhar-num-in" value=""
+	    placeholder="Enter Adhar Number"/>
+	    <input type="text" placeholder="Enter Name in English" id="name-in-en"/>
+	    <input type="text" placeholder="Enter Name in Hindi" id="name-in-hi"/>
+	     <input type="text" placeholder="Enter Father Name in English" id="name-in-f-en"/>
+	    <input type="text" placeholder="Enter Father Name in Hindi" id="name-in-f-hi"/>
+	    <input type="text" placeholder="Enter Your DOB" id="dob-in"/>
+	    <label for="Enter DOB">Select Gender</label><br />
+	     <select name="gender" id="gender-in">
+	       <option value="Male">Male</option>
+	       <option value="Female">Female</option>
+	       <option value="Custom">Custom</option>
+	     </select><br />
+	     <label for="Enter DOB">Choose A Image</label><br />
+	     <input type="file" name="image" id="image-in" value="" />
+	     <br />
+	     <textarea name="" id="add-in-hi" placeholder="Enter addres In Hindi" rows="4" cols="30"></textarea>
+	     <textarea name="" id="add-in-en" placeholder="Enter addres In English" rows="4" cols="30"></textarea>
+	     <div class="buttons">
+	       <button type="submit" onclick="main()">submit</button>
+	       <button type="submit" onclick="cansel()">cansel</button>
+	     </div>
+	  </div>
+	</div>
+</body>
+</html>
